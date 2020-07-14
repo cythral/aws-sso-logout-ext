@@ -1,0 +1,2 @@
+# AWS SSO Logout Chrome Extension
+One problem we ran into with using an OIDC broker for logging into the AWS Console was if you are already logged into the console on one account, then try logging into another, you would be forwarded to a screen that says "Please logout before signing into a new account."  This quick chrome extension fixes that by deleting the aws-userInfo session cookie from amazon.com anytime our start url redirects to the next page. 
